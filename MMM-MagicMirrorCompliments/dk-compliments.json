@@ -1,0 +1,42 @@
+{
+        "anytime" : [
+		"Du ser godt ud i dag!",
+		"I dag er en fantastisk dag!",
+		"Du gør en forskel",
+		"Et smukt smil, til en smuk dag",
+		"Ser du stadig i spejlet?",
+		"Spejlet siger: 'hej'",
+		"Hej sexet!"
+        ],
+        "morning" : [
+		"Dit hår er fantastisk i dag!",
+		"Start dagen med et smil",
+		"Det bliver en smuk dag!",
+		"Er dagen ikke fantastisk?",
+		"Forbered dig på en fantastisk dag!",
+		"Godmorgen, smukke!",
+		"Hvem har brug for kaffe, når du har dit smil?",
+		"Nyd din dag!",
+		"Hvordan har du sovet?"
+        ],
+        "afternoon" : [
+		"Bare afslut dit arbejde...",
+		"Eftermiddag, ikke morgen, ikke middag",
+		"Denne dag er fantastisk",
+		"Næsten middagstid!",
+		"Du gør en forskel!",
+		"Du er sjovere end bobleplast!",
+		"Hej smukke!",
+		"Du ser sexet ud!",
+		"Du ser godt ud i dag!"
+        ],
+        "evening" : [
+		"Mangler du et par opkald at foretage...",
+		"Nyd dit måltid",
+		"Hvil, fantastisk",
+		"Du gjorde forskellen",
+		"Kunne du lide din mad?",
+		"Du fik nogen til at smile i dag, jeg ved det.",
+		"Wow, du ser lækker ud!"
+        ]
+}
