@@ -1,0 +1,8 @@
+
+.MMM-ServerStatus .upClass {
+	color: green;
+}
+
+.MMM-ServerStatus .downClass {
+	color: red;
+}

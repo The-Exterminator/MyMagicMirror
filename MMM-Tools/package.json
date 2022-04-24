@@ -1,0 +1,29 @@
+{
+  "name": "MMM-Tools",
+  "version": "2.1.3",
+  "description": "Display stats on your MagicMirror",
+  "main": "MMM-Tools.js",
+  "keywords": [
+    "magic mirror",
+    "module",
+    "stats"
+  ],
+  "author": [
+    "eouia",
+    "bugsounet"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bugsounet/MMM-Tools/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bugsounet/MMM-Tools"
+  },
+  "homepage": "https://github.com/bugsounet/MMM-Tools",
+  "dependencies": {
+    "async": "^3.2.0",
+    "detect-rpi": "^1.4.0",
+    "systeminformation": "^5.6.7"
+  }
+}

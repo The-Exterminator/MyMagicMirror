@@ -1,0 +1,105 @@
+/*
+ *
+ * MMM-Tools
+ *
+ *
+ * MIT Licensed.
+ *
+ * Custom here your css module
+ *
+ */
+
+.Tools {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size:initial;
+  line-height:1em;
+  color:#EEE;
+}
+
+.Tools .status_item {
+  display:flex;
+  flex-direction: row;
+  /*justify-content: center;*/
+  height:1.2em;
+  align-items: center;
+}
+
+.Tools .status_item .item_label {
+  order: 1;
+  text-align: right;
+  padding-right:15px;
+  color:#BDF;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+.Tools .status_item .container {
+  order: 2;
+  /*
+  height:100%;
+  margin-top:0px;
+  */
+  align-items: center;
+  justify-content: center;
+}
+
+.Tools .status_item .container .value {
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  text-align: right;
+}
+
+.Tools .total {
+  text-align: right;
+  background-color: #333;
+  position:relative;
+  width:100%;
+}
+
+.Tools .bar {
+  text-align: left;
+  position:absolute;
+  top : 0;
+  background-color: #369;
+  overflow: visible;
+  height:100%;
+}
+
+.Tools .bar.step0 {
+  background-color: #33C;
+}
+.Tools .bar.step10 {
+  background-color: #43B;
+}
+.Tools .bar.step20 {
+  background-color: #53A;
+}
+.Tools .bar.step30 {
+  background-color: #639;
+}
+.Tools .bar.step40 {
+  background-color: #738;
+}
+.Tools .bar.step50 {
+  background-color: #837;
+}
+.Tools .bar.step60 {
+  background-color: #936;
+}
+.Tools .bar.step70 {
+  background-color: #A35;
+}
+.Tools .bar.step80 {
+  background-color: #B34;
+}
+.Tools .bar.step90 {
+  background-color: #C33;
+}
+.Tools .bar.step100 {
+  background-color: #D32;
+}
+

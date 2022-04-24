@@ -1,0 +1,44 @@
+  <head>
+    <!-- Place your kit's code here -->
+    <script src="https://kit.fontawesome.com/536d6c3267.js" crossorigin="anonymous"></script>
+  </head>
+
+{% if pingResults %}
+
+	<!-- show table -->
+	<table class="small {{ config.tableClass }}">
+
+		{% for host in pingResults %}
+
+			<tr class="hostRow">
+				<td style="width: 150px; text-align: left;" class=" ">
+
+					{{ host.name if host.name else host.ip }}
+				</td>
+				{% if host.isAlive %}
+					<td style="width: 10px;" class="{{config.upClass}}">
+						<span {% if config.upSymbol %}class="fas fa-{{config.upSymbol}}"{% endif %} {% if config.upColor %}style="color: {{config.upColor}};"{% endif %}></span>
+					</td>
+					<td class="{{config.upClass}}" style="text-align: left;">
+						{{ config.upText }}
+					</td>
+				{% else %}
+					<td class="{{config.downClass}}"}>
+						<span {% if config.downSymbol %}class="fas fa-{{config.downSymbol}}"{% endif %} {% if config.downColor %}style="color: {{config.downColor}};"{% endif %}></span>
+					</td>
+					<td class="{{config.downClass}}" style="text-align: left;">
+						{{ config.downText }}
+					</td>
+				{% endif %}
+			</tr>
+
+		{% endfor %}
+
+	</table>
+
+{% else %}
+
+	<!-- show error/loading message -->
+	<div class="dimmed xsmall">Indlæser...</div>
+	
+{% endif %}
