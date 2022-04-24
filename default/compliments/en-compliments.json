@@ -1,0 +1,30 @@
+{
+        "anytime" : [
+                "You look great today!",
+                "Today is an amazing day!",
+                "You make the difference",
+                "A beautiful smile, for a beautiful day",
+                "Are you stil watching the mirror?",
+                "The mirror says: 'hi'"
+        ],
+        "morning" : [
+                "Your hair is awesome today!",
+                "Start the day with a smile",
+                "It'll be a beautiful day!",
+                "Isn't the day awesome?",
+                "Prepare yourself, for a awesome day!"
+        ],
+        "afternoon" : [
+                "Just finishing your work...",
+                "Afternoon, not morning, not noon",
+                "This day is great",
+                "Almost dinnertime!"
+        ],
+        "evening" : [
+                "Just a few calls to make...",
+                "Bon appétit",
+                "Rest, awesome",
+                "You made the difference",
+                "Did you like your food?"
+        ]
+}

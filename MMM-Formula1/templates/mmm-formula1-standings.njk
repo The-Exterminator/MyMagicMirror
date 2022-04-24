@@ -1,0 +1,54 @@
+{% if loading %}
+    <div class="small dimmed light">
+        {{ "LOADING" | translate | safe }}
+    </div>
+{% elif data.standings.length === 0 %}
+    <div class="small dimmed light">
+        {{ "NO DATA" | translate | safe }}
+    </div>
+{% else %}
+    <table class="small align-left">
+        <thead>
+            <tr class="normal">
+                <td></td>
+                {% if (config.type === "DRIVER") %}
+                <td>{{ "DRIVER" | translate }}</td>
+                {% endif %}
+                {% if (config.showConstructor or config.type !== "DRIVER") %}
+                <td>{{ "CONSTRUCTOR" | translate }}</td>
+                {% endif %}
+                <td class="light symbol align-right stat"><span class="fa fa-line-chart"></span></td>
+                <td class="light symbol align-right stat"><span class="fa fa-trophy"></span></td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for standing in data.standings %}
+            <tr class="normal" style="opacity: {{ loop.index | getFadeOpacity(loop.length) }};">
+                {% if (config.type === "DRIVER") %}
+                <td class="symbol light">
+                    <div class="flag flag-{{ standing.driver.nationality | getCodeFromNationality }}{{ " grayscale" if config.grayscale }}"></div>
+                </td>
+                <td class="title bright">{{ standing.driver.firstName }} {{ standing.driver.lastName }}</td>
+                {% if (config.showConstructor) %}
+                <td class="title light">{{ standing.constructors | join (", ", "name") }}</td>
+                {% endif %}
+                {% else %}
+                <td class="symbol">
+                    <div class="flag flag-{{ standing.constructors.nationality | getCodeFromNationality }}{{ " grayscale" if config.grayscale }}"></div>
+                </td>
+                <td class="title bright">{{ standing.constructor.name }}</td>
+                {% endif %}
+                <td class="bright align-right stat">{{ standing.points }}</td>
+                <td class="bright align-right stat">{{ standing.wins }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        {% if (config.showFooter) %}
+        </tfoot>
+            <tr>
+                <td class="xsmall align-right" colspan="5">{{ "SEASON" | translate }}: {{ data.season }}, {{ "ROUND" | translate }}: {{ data.round }}</td>
+            </tr>
+        </tfoot>
+        {% endif %}
+    </table>
+{% endif %}

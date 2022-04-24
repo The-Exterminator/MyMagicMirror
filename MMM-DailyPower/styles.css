@@ -1,0 +1,21 @@
+.daily-power-image {
+    width: 100%;
+}
+
+.daily-power-blackAndWhite {
+    filter: grayscale(100%);
+}
+
+.daily-power-p {
+    line-height: 1.3em;
+    font-weight: 300;
+    margin: 4px;
+}
+
+.daily-power-verse-content {
+    text-align: left;
+}
+
+.daily-power-verse-reference {
+    text-align: right;
+}

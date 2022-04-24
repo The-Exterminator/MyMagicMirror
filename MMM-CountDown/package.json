@@ -1,0 +1,18 @@
+{
+  "name": "MMM-CountDown",
+  "version": "1.0.0",
+  "description": "Count down to a specific event",
+  "main": "MMM-CountDown.js",
+  "author": "Boaz Arad",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-eslint": "latest",
+    "grunt-jsonlint": "^1.1.0",
+    "grunt-markdownlint": "^3.1.4",
+    "grunt-stylelint": "latest",
+    "grunt-yamllint": "latest",
+    "stylelint-config-standard": "latest",
+    "time-grunt": "latest"
+  }
+}

@@ -1,0 +1,42 @@
+# vdirsyncer configuration for MagicMirror.
+#
+# Move it to ~/.vdirsyncer/config or ~/.config/vdirsyncer/config and edit it.
+# Run `vdirsyncer --help` for CLI usage.
+#
+# Optional parameters are commented out.
+# This file doesn't document all available parameters, see
+# http://vdirsyncer.pimutils.org/ for the rest of them.
+
+[general]
+# A folder where vdirsyncer can store some metadata about each pair.
+status_path = "~/.vdirsyncer/status/"
+
+# CALDAV Sync
+[pair iCloud_to_MagicMirror]
+a = "Mirror"
+b = "iCloud"
+collections = ["HERE-GOES-THE-UUID-OF-THE-CALENDAR-YOU-WANT-TO-SYNC"]
+
+# Calendars also have a color property
+metadata = ["displayname", "color"]
+
+[storage Mirror]
+# We need a single .ics file for use with the mirror (Attention! This is really slow on big amounts of events.)
+type = "singlefile"
+# We'll put the calendar file to a readable location for the calendar module
+path = "/home/pi/MagicMirror/modules/calendars/%s.ics"
+
+[storage iCloud]
+type = "caldav"
+url = "https://caldav.icloud.com/"
+# Authentication credentials
+username = "YOUR-ICLOUD-EMAIL-ADDRESS"
+password = "HERE-GOES-YOUR-APP-SPECIFIC-ICLOUD-PASSWORD"
+# We only want to sync in the direction TO the mirror, so we make iCloud readonly
+read_only = true
+# We only want to sync events
+item_types = ["VEVENT"]
+# We need to keep the number of events low, so we'll just sync the next month
+# Adjust this to your needs
+start_date = "datetime.now() - timedelta(days=1)"
+end_date = "datetime.now() + timedelta(days=30)"
