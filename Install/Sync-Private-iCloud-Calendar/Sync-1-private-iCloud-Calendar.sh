@@ -18,6 +18,11 @@ echo -e "\033[33;1mConfigure vdirsyncer\033[0m"
 mkdir ~/.vdirsyncer
 touch ~/.vdirsyncer/config
 echo -e "\033[33;1mINSERT YOU AppleID below username and PASSWORD Credentials below password\033[0m"
+echo -e "\033[31;0mHow to generate an app-specific\033[0m"
+echo -e "\033[33;1m1.) Sign in to appleid.apple.com.\033[0m"
+echo -e "\033[33;1m2.) In the Sign-In and Security section, click App-Specific Passwords.\033[0m"
+echo -e "\033[33;1m3.) Click Generate an app-specific password or click Blue plus sign icon., then follow the steps on your screen.\033[0m"
+echo -e "\033[33;1mCAfter you generate your app-specific password, enter or paste it into the password field of the app.\033[0m"
 read -p "Press enter to continue"
 cp ~/MagicMirror/modules/MyMagicMirror/Install/Sync-Private-iCloud-Calendar/Sync-1-private-iCloud-Calendar ~/.vdirsyncer/config
 nano ~/.vdirsyncer/config
