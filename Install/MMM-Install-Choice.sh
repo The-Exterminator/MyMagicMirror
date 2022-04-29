@@ -13,7 +13,7 @@ read -e -p "Select 1: " choice
 if [ "$choice" == "1" ]; then
 
     chmod +x MMM-Install.sh
-    ./MMM-Install.sh.sh
+    ./MMM-Install.sh
 
 elif [ "$choice" == "2" ]; then
 
