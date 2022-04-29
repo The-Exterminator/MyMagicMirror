@@ -8,7 +8,7 @@ echo -e "
  3.) Quit
 \n"
 
-read -e -p "Select 1: " choice
+read -e -p "Select 1-3: " choice
 
 if [ "$choice" == "1" ]; then
 
