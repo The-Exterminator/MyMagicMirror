@@ -81,7 +81,6 @@ choice="${choice:-N}"
 if [[ $choice =~ ^[Yy]$ ]]; then
 echo
 echo -e "\033[33;1mInstall calendar (Sync private iCloud Calendar)\033[0m"
-echo -e "\033[33;1mInstall calendar (Sync private iCloud Calendar)\033[0m"
 cd ~/MagicMirror/modules/MyMagicMirror/Install/Sync-Private-iCloud-Calendar/
 chmod +x menu.sh
 ./menu.sh
