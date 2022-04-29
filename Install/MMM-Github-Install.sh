@@ -33,14 +33,14 @@ echo -e "\033[33;1m
  6.) Quit
 \033[0m"
 
-read -e -p "Select 1: " choice
+read -e -p "Choice 1-6: " choice
 
 if [ "$choice" == "1" ]; then
     cp ~/MagicMirror/modules/MMM-MagicMirrorCompliments/cv-compliments.json ~/MagicMirror/modules/default/compliments
 
 elif [ "$choice" == "2" ]; then
     cp ~/MagicMirror/modules/MMM-MagicMirrorCompliments/dk-compliments.json ~/MagicMirror/modules/default/compliments
-    
+
 elif [ "$choice" == "3" ]; then
     cp ~/MagicMirror/modules/MMM-MagicMirrorCompliments/nl-compliments.json ~/MagicMirror/modules/default/compliments
 
@@ -87,10 +87,16 @@ echo -e "\033[33;1mInstall MMM-WeatherOrNot\033[0m"
 cd ~/MagicMirror/modules
 git clone https://github.com/mykle1/MMM-WeatherOrNot.git
 echo
+echo -e "\033[33;1mWill you install Sync private iCloud Calendar. ???\033[0m"
+read -e -p "Press Y or N: "  choice
+choice="${choice:-N}"
+if [[ $choice =~ ^[Yy]$ ]]; then
+echo
 echo -e "\033[33;1mInstall calendar (Sync private iCloud Calendar)\033[0m"
 cd ~/MagicMirror/modules/MyMagicMirror/Install/Sync-Private-iCloud-Calendar/
 chmod +x menu.sh
 ./menu.sh
+fi
 echo
 echo -e "\033[33;1mInstall MMM-CountDown\033[0m"
 cd ~/MagicMirror/modules
