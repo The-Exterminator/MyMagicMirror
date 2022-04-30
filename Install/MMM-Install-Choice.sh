@@ -21,7 +21,7 @@ elif [ "$choice" == "2" ]; then
 
 else
 
-    echo "Please select 1 or 2." && sleep 3
+    echo "Please select 1 or 2." && sleep 2
     clear && ask_user_Install_Choice
 
 fi
