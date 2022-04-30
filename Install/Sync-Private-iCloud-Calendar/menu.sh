@@ -7,7 +7,7 @@ echo -e "
  2.) Sync 2 private iCloud Calendar
 \n"
 
-read -e -p "Select 1-3: " choice
+read -e -p "Select 1-2: " choice
 
 if [ "$choice" == "1" ]; then
 
