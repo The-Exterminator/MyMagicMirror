@@ -41,6 +41,6 @@ nano ~/.vdirsyncer/config
 vdirsyncer discover
 echo -e "\033[33;1mNow we can start the sync.\033[0m"
 echo -e "\033[33;1mBy default, the syncer is started every 15 minutes.\033[0m"
-read -p "Press enter to continue"
+read -p "Press enter to continue."
 
 vdirsyncer sync
