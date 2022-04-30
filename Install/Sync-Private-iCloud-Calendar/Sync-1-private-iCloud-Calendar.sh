@@ -6,7 +6,7 @@ sudo apt-get install libxml2 libxslt1.1 zlib1g python3
 pip3 install --user --ignore-installed vdirsyncer
 
 echo -e "\033[33;1mAnd change the first line to !/usr/bin/python3\033[0m"
-read -p "Press enter to continue".
+read -p "Press enter to continue."
 nano ~/.local/bin/vdirsyncer
 
 sudo ln -s /home/pi/.local/bin/vdirsyncer /usr/bin/vdirsyncer
@@ -23,7 +23,7 @@ echo -e "\033[33;1m1.) Sign in to appleid.apple.com.\033[0m"
 echo -e "\033[33;1m2.) In the Sign-In and Security section, click App-Specific Passwords.\033[0m"
 echo -e "\033[33;1m3.) Click Generate an app-specific password or click Blue plus sign icon., then follow the steps on your screen.\033[0m"
 echo -e "\033[33;1mAfter you generate your app-specific password, enter or paste it into the password field of the app.\033[0m"
-read -p "Press enter to continue"
+read -p "Press enter to continue."
 cp ~/MagicMirror/modules/MyMagicMirror/Install/Sync-Private-iCloud-Calendar/Sync-1-private-iCloud-Calendar ~/.vdirsyncer/config
 nano ~/.vdirsyncer/config
 
