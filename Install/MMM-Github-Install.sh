@@ -30,7 +30,7 @@ echo -e "\033[33;1m
  3.) Dutch
  4.) English
  5.) German
- 6.) Quit
+ 6.) Continue
 \033[0m"
 
 read -e -p "Choice 1-6: " choice
