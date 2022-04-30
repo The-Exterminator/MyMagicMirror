@@ -51,7 +51,7 @@ elif [ "$choice" == "5" ]; then
     cp ~/MagicMirror/modules/MMM-MagicMirrorCompliments/de-compliments.json ~/MagicMirror/modules/default/compliments
 
 elif [ "$choice" == "6" ]; then
-    exit 0
+    cp ~/MagicMirror/modules/MMM-MagicMirrorCompliments/en-compliments.json ~/MagicMirror/modules/default/compliments
 else
     echo "Please select 1, 2, 3, 4, 5 or 6." && sleep 6
     exit && ask_user_MMM-MagicMirrorCompliments
