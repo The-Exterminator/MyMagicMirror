@@ -11,6 +11,7 @@ echo
 echo -e "\033[33;1m Go to Raspberry config program, set I2C (I2C_1) as enabled. Then shutdown.\033[0m"
 echo -e "\033[33;1m Connect Sensor and RPI with cable. Then power on.\033[0m"
 echo -e "\033[33;1m Check sudo i2cdetect -y 1 or install it.\033[0m"
+read -p "Press enter to continue."
 cd ~/MagicMirror/modules
 git clone https://github.com/eouia/MMM-GroveGestures.git
 cd MMM-GroveGestures
