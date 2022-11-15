@@ -1,0 +1,6 @@
+{
+  "ok" : "Ok",
+  "warning" : "Warning",
+  "critical" : "Critical",
+  "unknown" : "Unknown"
+}

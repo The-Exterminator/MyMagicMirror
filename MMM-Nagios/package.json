@@ -1,0 +1,42 @@
+{
+  "name": "MMM-Nagios",
+  "version": "1.0.0",
+  "description": "MagicMirror² module to display nagios statistics",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt",
+    "precommit": "grunt precommit"
+  },
+  "keywords": [
+    "magicmirror",
+    "nagios"
+  ],
+  "pre-commit": [
+    "precommit"
+  ],
+  "author": "The-Exterminator",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/The-Exterminator/MyMagicMirror/MMM-Nagios/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/The-Exterminator/MyMagicMirror/MMM-Nagios"
+  },
+  "dependencies": {
+    "node-rest-client": "^3.1.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "grunt": "^1.5.3",
+    "grunt-eslint": "latest",
+    "grunt-jsonlint": "^1.1.0",
+    "grunt-markdownlint": "^3.1.5",
+    "grunt-staged": "^0.1.0",
+    "grunt-stylelint": "latest",
+    "pre-commit": "^1.2.1",
+    "stylelint": "^14.14.1",
+    "stylelint-config-standard": "latest",
+    "time-grunt": "latest"
+  }
+}

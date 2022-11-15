@@ -1,0 +1,15 @@
+.nagios-critical {
+    color: red;
+}
+
+.nagios-warning {
+    color: yellow;
+}
+
+.nagios-unknown {
+    color: orange;
+}
+
+.nagios-ok {
+    color: green;
+}
