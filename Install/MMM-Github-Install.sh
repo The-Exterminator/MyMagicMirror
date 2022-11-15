@@ -120,6 +120,11 @@ echo
 echo -e "\033[33;1mInstall MMM-NewsFeedTV2\033[0m"
 sudo mv ~/MagicMirror/modules/MyMagicMirror/MMM-NewsFeedTV2 ~/MagicMirror/modules/
 echo
+echo -e "\033[33;1mInstall MMM-Nagios\033[0m"
+sudo mv ~/MagicMirror/modules/MyMagicMirror/MMM-Nagios ~/MagicMirror/modules/
+cd ~/MagicMirror/MMM-Nagios
+npm install --force
+echo
 echo -e "\033[33;1mInstall MMM-Network-Signal\033[0m"
 cd ~/MagicMirror/modules
 git clone https://github.com/PoOwAa/MMM-network-signal.git
