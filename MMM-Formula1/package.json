@@ -35,7 +35,7 @@
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-jsdoc": "^36.1.0",
 		"eslint-plugin-prettier": "^4.0.0",
-		"mocha": "^8.4.0",
+		"mocha": "^10.1.0",
 		"module-alias": "^2.2.2",
 		"prettier": "^2.4.1",
 		"stylelint": "^13.13.1",
