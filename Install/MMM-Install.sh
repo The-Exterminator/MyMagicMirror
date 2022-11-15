@@ -98,6 +98,11 @@ echo
 echo -e "\033[33;1mInstall MMM-DailyPower\033[0m"
 echo
 echo -e "\033[33;1mInstall MMM-NewsFeedTV2\033[0m"
+
+echo
+echo -e "\033[33;1mInstall MMM-Nagioc\033[0m"
+cd ~/MagicMirror/modules/MMM-Nagios/
+npm install --force 
 echo
 echo -e "\033[33;1mInstall MMM-Network-Signal\033[0m"
 cd ~/MagicMirror/modules/MMM-network-signal/
