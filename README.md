@@ -425,9 +425,9 @@ bash -c "$(curl -s https://raw.githubusercontent.com/The-Exterminator/MyMagicMir
   {
     module: 'MMM-Nagios',
     position: 'bottom_right',
-    header: 'Nagios',
+    header: 'Nagios - Server',
     config: {
-      statusUrl: 'http://localhost/nagios/statusJson.php',
+      statusUrl: 'http://<YOUR URL>/nagios/statusJson.php',
       username:'YOUR USERNAME',
       password: 'YOUR PASSWORD',
       showDetails: true,
@@ -439,7 +439,7 @@ bash -c "$(curl -s https://raw.githubusercontent.com/The-Exterminator/MyMagicMir
     position: 'bottom_right',
     header: 'Nagios - Hosts',
     config: {
-      statusUrl: 'http://127.0.0.1/nagios/statusJson.php',
+      statusUrl: 'http://<YOUR URL>/nagios/statusJson.php',
       username:'YOUR USERNAME',
       password: 'YOUR PASSWORD',
       showDetails: true,
