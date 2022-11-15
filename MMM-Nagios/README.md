@@ -45,7 +45,7 @@ modules: [
 ```
 
 ## Configuration options
-```
+
 The following properties can be configured:
 
 Option           | Description
@@ -57,7 +57,6 @@ Option           | Description
 `showHosts`      | Show information about hosts instead of services.<br>**Default value:** `false`
 `reloadInterval` | Number of milliseconds between refresh.<br>**Default value:** `5 * 60 * 1000` (5 minutes)
 `labels`         | Defines the labels for each type of status.<br>**Default value:** See [Default labels](https://github.com/The-Exterminator/MyMagicMirror/blob/main/MMM-Nagios/MMM-Nagios.css).
-```
 
 ## Notifications
 ```
