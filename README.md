@@ -445,7 +445,7 @@ bash -c "$(curl -s https://raw.githubusercontent.com/The-Exterminator/MyMagicMir
       showDetails: true,
       showHosts: true
     }
-  },
+  }
 ```
 **REMEMBER to adjust your settings in ~/MagicMirror/config/config.js**
 #
