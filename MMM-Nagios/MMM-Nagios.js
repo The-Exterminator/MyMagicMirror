@@ -1,7 +1,7 @@
 /* Magic Mirror
  * Module: MMM-Nagios
  *
- * By Michael http://github.com/The-Exterminator/MMM-Nagios
+ * By Michael https://github.com/The-Exterminator/MyMagicMirror/blob/main/MMM-Nagios
  * MIT Licensed.
  */
 
