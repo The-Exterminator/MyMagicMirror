@@ -220,7 +220,31 @@ var config =
           }
         ]
       }
-    },
+    },  
+    {
+    module: 'MMM-Nagios',
+    position: 'top_right',
+    header: 'Nagios - Services',
+    config: {
+      statusUrl: 'https://<YOUR URL>/statusJson.php',
+      username:'Basic auth username',
+      password: 'Basic auth password',
+      showDetails: true,
+      showHosts: false
+    }
+  },
+  {
+      module: 'MMM-Nagios',
+      position: 'top_right',
+      header: 'Nagios - Hosts',
+      config: {
+        statusUrl: 'https://<YOUR URL>/statusJson.php',
+        username:'Basic auth username',
+        password: 'Basic auth password',
+        showDetails: true,
+        showHosts: true
+      }
+    },	  
     {
       module: 'MMM-network-signal',
       position: 'top_right',
