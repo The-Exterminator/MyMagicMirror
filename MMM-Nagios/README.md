@@ -5,6 +5,9 @@ A MagicMirror Module for displaying the Nagios Network Monitoring.
 [![Platform](https://img.shields.io/badge/platform-MagicMirror-informational)](https://MagicMirror.builders)
 
 ## Example
+
+![](images/MMM-Nagios.png)
+
 ## Installing the module
 
 The module uses the JSON formatted Nagios status as formattted by [php-nagios-json](https://github.com/The-Exterminator/MyMagicMirror/tree/main/MMM-Nagios/php). <br>
