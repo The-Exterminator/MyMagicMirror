@@ -68,7 +68,7 @@ Notification   | Description
 `SHOW_DETAILS` | Payload is a `boolean` indicating if the details should be shown, just like (`showDetails` in the config).
 ```
 
-### Coloring
+## Coloring
 ```
 .nagios-critical {
     color: red;
