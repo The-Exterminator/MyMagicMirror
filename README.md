@@ -420,6 +420,35 @@ bash -c "$(curl -s https://raw.githubusercontent.com/The-Exterminator/MyMagicMir
 #
 
 # Page 4
+## MMM-Nagios
+```
+  {
+    module: 'MMM-Nagios',
+    position: 'bottom_right',
+    header: 'Nagios',
+    config: {
+      statusUrl: 'http://localhost/nagios/statusJson.php',
+      username:'YOUR USERNAME',
+      password: 'YOUR PASSWORD',
+      showDetails: true,
+      showHosts: false,
+    }
+  },
+  {
+    module: 'MMM-Nagios',
+    position: 'bottom_right',
+    header: 'Nagios - Hosts',
+    config: {
+      statusUrl: 'http://127.0.0.1/nagios/statusJson.php',
+      username:'YOUR USERNAME',
+      password: 'YOUR PASSWORD',
+      showDetails: true,
+      showHosts: true
+    }
+  },
+```
+**REMEMBER to adjust your settings in ~/MagicMirror/config/config.js**
+#
 ## MMM-Network-Signal
 ```
 {
