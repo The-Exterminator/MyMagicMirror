@@ -19,32 +19,30 @@ Remember to changes this line ```$statusFile = "/opt/local/var/nagios/status.dat
 To use this module, add it to the modules array in the `config/config.js` file:
 
 ```
-modules: [
   {
     module: 'MMM-Nagios',
-    position: 'top_right',
-    header: 'Nagios - Services',
+    position: 'bottom_right',
+    header: 'Nagios - Server',
     config: {
-      statusUrl: 'https://<YOUR URL>/statusJson.php',
-      username:'Basic auth username',
-      password: 'Basic auth password',
+      statusUrl: 'http://<YOUR URL>/nagios/statusJson.php',
+      username:'YOUR USERNAME',
+      password: 'YOUR PASSWORD',
       showDetails: true,
-      showHosts: false
+      showHosts: false,
     }
   },
   {
     module: 'MMM-Nagios',
-    position: 'top_right',
+    position: 'bottom_right',
     header: 'Nagios - Hosts',
     config: {
-      statusUrl: 'https://<YOUR URL>/statusJson.php',
-      username:'Basic auth username',
-      password: 'Basic auth password',
+      statusUrl: 'http://<YOUR URL>/nagios/statusJson.php',
+      username:'YOUR USERNAME',
+      password: 'YOUR PASSWORD',
       showDetails: true,
       showHosts: true
     }
   }
-]
 ```
 
 ## Configuration options
