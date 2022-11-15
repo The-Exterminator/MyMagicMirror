@@ -35,7 +35,7 @@ bash -c "$(curl -s https://raw.githubusercontent.com/The-Exterminator/MyMagicMir
 |3|[`MMM-DailyPower`](/MMM-DailyPower/README.md)|[oemel09](https://github.com/oemel09/MMM-DailyPower)|[Insert This](#mmm-dailypower)|
 |3|[`MMM-NewsFeedTV2`](https://docs.magicmirror.builders/modules/newsfeed.html)|[The-Exterminator](https://github.com/MichMich/MagicMirror/tree/master/modules/default/newsfeed)|[Insert This](#mmm-newsfeedtv2)|
 | | | |
-|4|[`MMM-Nagios`](/MMM-Nagios/README.md)|[The-Exterminator](https://github.com/The-Exterminator/MyMagicMirror/MMM-Nagios)|[Insert This](#mmm-nagios)|
+|4|[`MMM-Nagios`](/MMM-Nagios/README.md)|[The-Exterminator](https://github.com/The-Exterminator/MyMagicMirror/tree/main/MMM-Nagios)|[Insert This](#mmm-nagios)|
 |4|[`MMM-network-signal`](/MMM-network-signal/README.md)|[PoOwAa](https://github.com/PoOwAa/MMM-network-signal)|[Insert This](#mmm-network-signal)|
 |4|[`MMM-NewsFeedBerlingske`](https://docs.magicmirror.builders/modules/newsfeed.html)|[The-Exterminator](https://github.com/MichMich/MagicMirror/tree/master/modules/default/newsfeed)|[Insert This](#mmm-newsfeedberlingske)|
 |4|[`MMM-ServerStatus`](/MMM-ServerStatus/README.md)|[XBCreepinJesus](https://github.com/XBCreepinJesus/MMM-ServerStatus)|[Insert This](#mmm-serverstatus)|
