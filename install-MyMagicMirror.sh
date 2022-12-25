@@ -13,8 +13,8 @@ cd MagicMirror/
 npm install --only=prod --omit=dev
 cp config/config.js.sample config/config.js
 
-echo -e "\033[33;1mUpdate npm to 8.8.0\033[0m"
-sudo npm install -g npm@8.8.0
+echo -e "\033[33;1mUpdate npm to Latest\033[0m"
+sudo npm install npm@latest -g
 
 echo -e "\033[33;1mInstall MyMagicMirror\033[0m"
 cd ~/MagicMirror/modules
