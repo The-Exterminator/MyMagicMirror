@@ -292,7 +292,7 @@ bash -c "$(curl -s https://raw.githubusercontent.com/The-Exterminator/MyMagicMir
       calendars: [
         {
           symbol: 'calendar',
-          url: 'http://localhost:8080/modules/calendars/INSERT-YOURS-HERE.ics',
+          url: 'http://0.0.0.0:8080/modules/calendars/INSERT-YOURS-HERE.ics',
           color: '#5bc0de'
         }
       ]
