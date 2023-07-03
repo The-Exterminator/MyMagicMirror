@@ -103,7 +103,7 @@ var config =
         calendars: [
           {
             symbol: 'calendar',
-            url: 'http://localhost:8080/modules/calendars/INSERT-YOUS-HERE.ics',
+            url: 'http://0.0.0.0:8080/modules/calendars/INSERT-YOUS-HERE.ics',
             color: '#5bc0de'
           }
         ]
@@ -125,7 +125,7 @@ var config =
         calendars: [
           {
             symbol: 'calendar',
-            url: 'http://localhost:8080/modules/calendars/INSERT-YOUS-HERE.ics',
+            url: 'http://0.0.0.0:8080/modules/calendars/INSERT-YOUS-HERE.ics',
             color: '#5bc0de'
           }
         ]
