@@ -122,8 +122,8 @@ sudo mv ~/MagicMirror/modules/MyMagicMirror/MMM-NewsFeedTV2 ~/MagicMirror/module
 echo
 echo -e "\033[33;1mInstall MMM-Nagios\033[0m"
 sudo mv ~/MagicMirror/modules/MyMagicMirror/MMM-Nagios ~/MagicMirror/modules/
-#cd ~/MagicMirror/modules/MMM-Nagios
-#npm install --force
+cd ~/MagicMirror/modules/MMM-Nagios
+npm install --force
 echo
 echo -e "\033[33;1mInstall MMM-Network-Signal\033[0m"
 cd ~/MagicMirror/modules
