@@ -1,0 +1,21 @@
+{
+  "name": "mmm-bluelinky2",
+  "version": "1.0.0",
+  "description": "A simple MagicMirror module for bluelink Hyundai cars, adapted from MMM-Bluelinky",
+  "main": "MMM-Bluelinky2.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "author": "Isaac Lenhart",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "babel-jest": "^29.7.0"
+  },
+  "dependencies": {
+    "bluelinky": "^9.1.0"
+  }
+}
