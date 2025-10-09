@@ -140,12 +140,13 @@ bash -c "$(curl -s https://raw.githubusercontent.com/The-Exterminator/MyMagicMir
           'updatenotification',
           'weather',
           'MMM-DynamicWeather',
-          'MMM-WeatherOrNot'
+          'MMM-WeatherOrNot',
+          'MMM-Bluelinky2'
         ],
         [
           'MMM-NewsFeedEB',
           'MMM-Formula1',
-	  'MMM-CountDown',
+	      'MMM-CountDown',
           'calendar'
         ],
         [
