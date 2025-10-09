@@ -72,9 +72,13 @@ cd ~/MagicMirror/modules/MMM-DynamicWeather
 npm init -y
 npm install request --save
 echo
-echo -e "\033[33;1mInstall MMM-NewsFeedBT\033[0m"
-echo
 echo -e "\033[33;1mInstall MMM-WeatherOrNot\033[0m"
+echo
+echo -e "\033[33;1mInstall MMM-Bluelinky2\033[0m"
+cd ~/MagicMirror/modules/MMM-Bluelinky2
+npm install
+echo
+echo -e "\033[33;1mInstall MMM-NewsFeedBT\033[0m"
 echo
 echo -e "\033[33;1mWill you install Sync private iCloud Calendar. ???\033[0m"
 read -e -p "Press Y or N: "  choice
