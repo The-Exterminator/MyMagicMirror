@@ -59,7 +59,7 @@ Copy the example config to your MagicMirror config file:
 | showLastUpdated | no | Show 'Updated 4 minutes ago' at the bottom | `true` |
 
 ## Preview
-![Screenshot](preview.jpg)
+![Screenshot](images/preview.jpg)
 Left Hyundai Ioniq example without custom name. As you can see this module is based on the [MMM-Tesla2](https://github.com/martinburheimtingstad/MMM-Tesla2/) module on the right.
 
 ## BlueLinky
