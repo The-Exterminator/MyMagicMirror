@@ -1,3 +1,17 @@
+# MagicMirror Module: MMM-Bluelinky2
+
+A MagicMirror Module for displaying down the days to a date/event.
+
+[![Platform](https://img.shields.io/badge/platform-MagicMirror-informational)](https://MagicMirror.builders)
+
+## Example
+
+![Screenshot](images/screenshot.png)
+
+I've never written anything with Node.js before, so hopefully this isn't a total mess, if it is - feel free to lend a hand :)
+
+
+
 # MMM-Bluelinky2
 Show Hyundai EV car data on your Magic Mirror using BlueLinky npm package. The MMM-Bluelinky2 module is based on the [MMM-Bluelinky](https://github.com/kstolk/MMM-Bluelinky) module, which itself is based on the [MMM-Tesla2](https://github.com/martinburheimtingstad/MMM-Tesla2/) module.
 
