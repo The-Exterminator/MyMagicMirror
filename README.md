@@ -24,6 +24,7 @@ bash -c "$(curl -s https://raw.githubusercontent.com/The-Exterminator/MyMagicMir
 |1|[`MMM-DynamicWeather`](/MMM-DynamicWeather/README.md)|[scottcl88](https://github.com/scottcl88/MMM-DynamicWeather)|[Insert This](#mmm-dynamicweather)|
 |1|[`MMM-NewsFeedBT`](https://docs.magicmirror.builders/modules/newsfeed.html)|[The-Exterminator](https://github.com/MichMich/MagicMirror/tree/master/modules/default/newsfeed)|[Insert This](#mmm-newsfeedbt)|
 |1|[`MMM-WeatherOrNot`](/MMM-WeatherOrNot/README.md)|[mykle1](https://github.com/mykle1/MMM-WeatherOrNot)|[Insert This](#mmm-weatherornot)|
+|1|[`MMM-Bluelinky2`](/MMM-Bluelinky2/README.md)|[ilenhart](https://github.com/ilenhart/MMM-Bluelinky2)|[Insert This](#mmm-bluelink2)|
 |1|[`updatenotification`](https://docs.magicmirror.builders/modules/updatenotification.html)|[MichMich](https://github.com/MichMich/MagicMirror/tree/master/modules/default/updatenotification)|[Insert This](#updatenotification)|
 |1|[`weather`](https://docs.magicmirror.builders/modules/weather.html)|[MichMich](https://github.com/MichMich/MagicMirror/tree/master/modules/default/weather)|[Insert This](#weather)|
 | | | |
