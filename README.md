@@ -247,6 +247,27 @@ bash -c "$(curl -s https://raw.githubusercontent.com/The-Exterminator/MyMagicMir
 ```
 **REMEMBER to adjust your settings in ~/MagicMirror/config/config.js**
 #
+## MMM-Bluelinky2
+```
+{
+  module: 'MMM-Bluelinky2',
+  position: 'bottom_left',
+  config: {
+    name: 'YOU CAR NAME',
+    username: 'YOUR BLUELINK EMAIL HERE',
+    password: 'YOUR BLUELINK PASSWORD HERE',
+    region: 'EU',
+    pin: 'YOUR BLUELINK PIN CODE HERE',
+    vin: 'YOUR CAR VIN HERE' //Optional.
+    refreshIntervalWhileDisconnected:  1000 * 60 * 60, // 60 minutes,
+    refreshIntervalWhileCharging: 1000 * 60 * 5, // 5 minutes
+    refreshIntervalWhileUnderBatteryLevel:1000 * 60 * 5, // 5 minutes
+    underBatteryLevelAmount: 50 //50% charged, etc.
+  }
+}
+```
+**REMEMBER to adjust your settings in ~/MagicMirror/config/config.js**
+#
 ## Updatenotification
 ```
 {
