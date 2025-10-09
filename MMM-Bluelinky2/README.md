@@ -6,7 +6,7 @@ A MagicMirror Module for displaying down the days to a date/event.
 
 ## Example
 
-![Screenshot](images/screenshot.png)
+![Screenshot](/preview.jpg)
 
 I've never written anything with Node.js before, so hopefully this isn't a total mess, if it is - feel free to lend a hand :)
 
