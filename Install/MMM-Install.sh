@@ -77,6 +77,8 @@ echo
 echo -e "\033[33;1mInstall MMM-Bluelinky2\033[0m"
 cd ~/MagicMirror/modules/MMM-Bluelinky2
 npm install
+cd ~/MagicMirror
+npm install bluelinky
 echo
 echo -e "\033[33;1mInstall MMM-NewsFeedBT\033[0m"
 echo
