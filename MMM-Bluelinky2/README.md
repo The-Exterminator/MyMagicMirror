@@ -68,6 +68,3 @@ This is a fork of [MMM-BlueLinky](https://github.com/kstolk/MMM-Bluelinky), as s
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
