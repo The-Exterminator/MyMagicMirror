@@ -81,12 +81,20 @@ cd MMM-DynamicWeather
 npm init -y
 npm install request --save
 echo
-echo -e "\033[33;1mInstall MMM-NewsFeedBT\033[0m"
-sudo mv ~/MagicMirror/modules/MyMagicMirror/MMM-NewsFeedBT ~/MagicMirror/modules/
-echo
 echo -e "\033[33;1mInstall MMM-WeatherOrNot\033[0m"
 cd ~/MagicMirror/modules
 git clone https://github.com/mykle1/MMM-WeatherOrNot.git
+echo
+echo -e "\033[33;1mInstall MMM-Bluelinky2\033[0m"
+cd ~/MagicMirror/modules
+git clone https://github.com/ilenhart/MMM-Bluelinky2.git
+cd MMM-Bluelinky2
+npm install
+cd ~/MagicMirror
+npm install bluelinky
+echo
+echo -e "\033[33;1mInstall MMM-NewsFeedBT\033[0m"
+sudo mv ~/MagicMirror/modules/MyMagicMirror/MMM-NewsFeedBT ~/MagicMirror/modules/
 echo
 echo -e "\033[33;1mWill you install Sync private iCloud Calendar. ???\033[0m"
 read -e -p "Press Y or N: "  choice
