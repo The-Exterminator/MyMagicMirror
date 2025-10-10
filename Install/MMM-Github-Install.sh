@@ -142,6 +142,10 @@ echo
 echo -e "\033[33;1mInstall MMM-NewsFeedBerlingske\033[0m"
 sudo mv ~/MagicMirror/modules/MyMagicMirror/MMM-NewsFeedBerlingske ~/MagicMirror/modules/
 echo
+echo -e "\033[33;1mInstall MMM-pihole-stats\033[0m"
+cd ~/MagicMirror/modules
+git clone https://github.com/sheyabernstein/MMM-pihole-stats
+echo
 echo -e "\033[33;1mInstall MMM-ServerStatus\033[0m"
 cd ~/MagicMirror/modules
 git clone https://github.com/XBCreepinJesus/MMM-ServerStatus.git
