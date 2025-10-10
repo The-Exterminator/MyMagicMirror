@@ -115,6 +115,8 @@ npm install
 echo
 echo -e "\033[33;1mInstall MMM-NewsFeedBerlingske\033[0m"
 echo
+echo -e "\033[33;1mInstall MMM-pihole-stats\033[0m"
+echo
 echo -e "\033[33;1mInstall MMM-ServerStatus\033[0m"
 cd ~/MagicMirror/modules/MMM-ServerStatus/
 npm install
