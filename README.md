@@ -39,6 +39,7 @@ bash -c "$(curl -s https://raw.githubusercontent.com/The-Exterminator/MyMagicMir
 |4|[`MMM-Nagios`](/MMM-Nagios/README.md)|[The-Exterminator](https://github.com/The-Exterminator/MyMagicMirror/tree/main/MMM-Nagios)|[Insert This](#mmm-nagios)|
 |4|[`MMM-network-signal`](/MMM-network-signal/README.md)|[PoOwAa](https://github.com/PoOwAa/MMM-network-signal)|[Insert This](#mmm-network-signal)|
 |4|[`MMM-NewsFeedBerlingske`](https://docs.magicmirror.builders/modules/newsfeed.html)|[The-Exterminator](https://github.com/MichMich/MagicMirror/tree/master/modules/default/newsfeed)|[Insert This](#mmm-newsfeedberlingske)|
+|4|[`MMM-pihole-stats`](/MMM-pihole-stats/README.md)|[sheyabernstein](https://github.com/sheyabernstein/MMM-pihole-stats)|[Insert This](#mmm-pihole-stats)|
 |4|[`MMM-ServerStatus`](/MMM-ServerStatus/README.md)|[XBCreepinJesus](https://github.com/XBCreepinJesus/MMM-ServerStatus)|[Insert This](#mmm-serverstatus)|
 |4|[`MMM-Tools`](/MMM-Tools/README.md)|[bugsounet](https://github.com/bugsounet/MMM-Tools)|[Insert This](#mmm-tools)|
 | | | |
@@ -497,6 +498,20 @@ bash -c "$(curl -s https://raw.githubusercontent.com/The-Exterminator/MyMagicMir
         url: 'https://www.berlingske.dk/content/21838/rss'
       }
     ]
+  }
+}
+```
+**REMEMBER to adjust your settings in ~/MagicMirror/config/config.js**
+#
+## MMM-pihole-stats
+```
+{
+  module: 'MMM-pihole-stats',
+  position: 'bottom_right',
+  header: 'Pi-Hole',
+  config: {
+    apiURL: 'http://YOUR IP TO PIHOLE/api',
+	apiKey: 'YOUR PI.HOLE OR APP PASSWORD',
   }
 }
 ```
