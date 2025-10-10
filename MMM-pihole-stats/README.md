@@ -1,10 +1,8 @@
 # MagicMirror Module: MMM-pihole-stats
 
-A MagicMirror Module for displaying the Danish TV2 station News.
+A MagicMirror Module for displaying the Pihole Stats.
 
 [![Platform](https://img.shields.io/badge/platform-MagicMirror-informational)](https://MagicMirror.builders)
-
-Pi-hole stats module for MagicMirror<sup>2</sup>
 
 ## Screenshots
 
