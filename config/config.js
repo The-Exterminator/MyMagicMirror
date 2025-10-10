@@ -30,6 +30,8 @@ var config =
       position: 'bottom_left',
       header: 'Ballerup',
       config: {
+    	apiVersion: '2.5',
+    	apiBase: 'https://api.openweathermap.org/data/',
         location: 'Ballerup',
         locationID: '2624341',
         apiKey: 'YOUR_OPENWEATHER_API_KEY',
@@ -73,6 +75,22 @@ var config =
         bgColor: '#000000',
         icons: 'Climacons Animated',
         updateInterval: 600000
+      }
+    },
+    {
+      module: 'MMM-Bluelinky2',
+      position: 'bottom_right',	// This can be any of the regions.
+      config: {
+        name: 'YOU CAR NAME HERE',
+        username: 'YOU EMAIL TO BLUELINK HERE',
+        password: 'YOU PASSWORD TO BLUELINK HERE',
+        region: 'EU',
+        pin: 'YOU BLUELINK PINCODE HERE',
+        vin: 'YOU CARS VIN HERE', //Optional.  If not supplied or invalid, chooses your first (or only) car
+        refreshIntervalWhileDisconnected:  1000 * 60 * 60, // 60 minutes,
+        refreshIntervalWhileCharging: 1000 * 60 * 5, // 5 minutes
+        refreshIntervalWhileUnderBatteryLevel:1000 * 60 * 5, // 5 minutes
+        underBatteryLevelAmount: 50 //50% charged, etc.
       }
     },
     {
@@ -136,17 +154,20 @@ var config =
       position: 'bottom_right',
       header: 'F1 Stilling',
       config: {
-	season: "current",
-	type: "DRIVER",
-	maxRows: 10,
-	calendar: false,
-	showConstructor: true,
-	fade: true,
-	fadePoint: 0.3,
-	reloadInterval: 1800000,
-	animationSpeed: 2500,
-	grayscale: true,
-	showFooter: true
+        season: "current",
+        maxRowsDriver: 3,
+        maxRowsConstructor: 3,
+        showStanding: "MIX",
+        loadDriver: true,
+        loadConstructor: true,
+        showSchedule: true,
+        fade: false,
+        fadePoint: 0.3,
+        reloadInterval: 30 * 60 * 1000,
+        screenRefreshInterval: 30 * 1000,
+        animationSpeed: 2.5 * 1000,
+        grayscale: false,
+        showNextRace: true
       }
     },
     {
@@ -177,8 +198,8 @@ var config =
       position: "upper_third",
       config: {
         position: "upper_third",
-	   event: "Le Mans 2022 on:",
-	   date: "2022-06-11 16:00:00",
+	   event: "Le Mans 2026 om:",
+	   date: "2026-06-13 16:00:00",
 	   showHours: true,
 	   showMinutes: true,
 	   showSeconds: true,
@@ -220,43 +241,14 @@ var config =
           }
         ]
       }
-    },  
-    {
-    module: 'MMM-Nagios',
-    position: 'top_right',
-    header: 'Nagios - Services',
-    config: {
-      statusUrl: 'https://<YOUR URL>/statusJson.php',
-      username:'Basic auth username',
-      password: 'Basic auth password',
-      showDetails: true,
-      showHosts: false
-    }
-  },
-  {
-      module: 'MMM-Nagios',
-      position: 'top_right',
-      header: 'Nagios - Hosts',
-      config: {
-        statusUrl: 'https://<YOUR URL>/statusJson.php',
-        username:'Basic auth username',
-        password: 'Basic auth password',
-        showDetails: true,
-        showHosts: true
-      }
-    },	  
-    {
+    },
+   {
       module: 'MMM-network-signal',
       position: 'top_right',
       config: {
         animationSpeed: 100,
         showMessage: false
       }
-    },
-    {
-      module: 'MMM-Tools',
-      position: 'bottom_left',
-      config: {}
     },
     {
       module: 'MMM-ServerStatus',
@@ -266,24 +258,33 @@ var config =
         templateName: 'MyTemplate',
         group: 'raspberry',
         hosts: [
+		  {
+            name: 'PiHole / Nagios',
+            ip: 'INSERT YOURS HERE'
+          },
           {
             name: 'WebServer',
             ip: 'INSERT YOURS HERE'
           },
           {
-            name: 'SQLServer',
+          {
+            name: 'MariaSqlServer',
             ip: 'INSERT YOURS HERE'
           },
           {
-            name: 'Transmission',
-            ip: 'INSERT YOURS HERE'
-          },
-          {
-            name: 'Lejepladsen',
+            name: 'TorrentServer',
             ip: 'INSERT YOURS HERE'
           },
           {
             name: 'Airsonic',
+            ip: 'INSERT YOURS HERE'
+          },
+          {
+            name: 'LegeServer',
+            ip: 'INSERT YOURS HERE'
+          },
+          {
+            name: 'MagicMirror',
             ip: 'INSERT YOURS HERE'
           }
         ],
@@ -379,13 +380,51 @@ var config =
       }
     },
     {
+    module: 'MMM-Nagios',
+    position: 'top_right',
+    header: 'Nagios - Services',
+    config: {
+      statusUrl: 'https://<YOUR URL>/statusJson.php',
+      username:'Basic auth username',
+      password: 'Basic auth password',
+      showDetails: true,
+      showHosts: false
+    }
+    },
+      {
+      module: 'MMM-Nagios',
+      position: 'top_right',
+      header: 'Nagios - Hosts',
+      config: {
+        statusUrl: 'https://<YOUR URL>/statusJson.php',
+        username:'Basic auth username',
+        password: 'Basic auth password',
+        showDetails: true,
+        showHosts: true
+      }
+    },	  
+    {
+      module: 'MMM-pihole-stats',
+      position: 'bottom_right',
+      header: 'Pi-Hole',
+      config: {
+        apiURL: 'http://<YOUR URL>/api',
+	    apiKey: 'YOUR PI.HOLE OR APP PASSWORD HERE',
+      }
+    },
+    {
+      module: 'MMM-Tools',
+      position: 'bottom_left',
+      config: {}
+    },
+    {
       module: 'MMM-NewsFeedBerlingske',
       position: 'bottom_bar',
       config: {
         feeds: [
           {
             title: 'Berlingske',
-            url: 'https://www.berlingske.dk/content/21838/rss'
+            url: 'https://www.berlingske.dk/next-api/feeds/alle'
           }
         ]
       }
@@ -456,12 +495,13 @@ var config =
             'updatenotification',
             'weather',
             'MMM-DynamicWeather',
-            'MMM-WeatherOrNot'
+            'MMM-WeatherOrNot',
+			'MMM-Bluelinky2'
           ],
           [
             'MMM-NewsFeedEB',
             'MMM-Formula1',
-	    'MMM-CountDown',
+			'MMM-CountDown',
             'calendar'
           ],
           [
@@ -472,8 +512,9 @@ var config =
             'MMM-NewsFeedBerlingske',
             'MMM-network-signal',
             'MMM-Tools',
-            'MMM-ServerStatus'
-          ]
+            'MMM-ServerStatus',
+			'MMM-Nagios',
+			'MMM-pihole-stats'
         ],
         fixed: [
           'clock',
