@@ -1,3 +1,9 @@
+# MagicMirror Module: MMM-pihole-stats
+
+A MagicMirror Module for displaying the Danish TV2 station News.
+
+[![Platform](https://img.shields.io/badge/platform-MagicMirror-informational)](https://MagicMirror.builders)
+
 # MMM-pihole-stats
 
 Pi-hole stats module for MagicMirror<sup>2</sup>
@@ -6,11 +12,11 @@ Pi-hole stats module for MagicMirror<sup>2</sup>
 
 With `config.showSources` enabled:
 
-![Preview-Sources](docs/preview-showSources.png "Screen Shot (with Sources)")
+![Preview-Sources](images/preview-showSources.png "Screen Shot (with Sources)")
 
 Without `config.showSources` enabled:
 
-![Preview](docs/preview.png "Screen Shot")
+![Preview](images/preview.png "Screen Shot")
 
 ## Dependencies
 
