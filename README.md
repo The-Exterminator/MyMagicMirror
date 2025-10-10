@@ -355,16 +355,19 @@ bash -c "$(curl -s https://raw.githubusercontent.com/The-Exterminator/MyMagicMir
   header: 'F1 Stilling',
   config: {
     season: "current",
-	  type: "DRIVER",
-	  maxRows: 10,
-	  calendar: false,
-	  showConstructor: true,
-	  fade: true,
-	  fadePoint: 0.3,
-	  reloadInterval: 1800000,
-	  animationSpeed: 2500,
-	  grayscale: true,
-	  showFooter: true
+    maxRowsDriver: 3,
+    maxRowsConstructor: 3,
+    showStanding: "MIX",
+    loadDriver: true,
+    loadConstructor: true,
+    showSchedule: true,
+    fade: false,
+    fadePoint: 0.3,
+    reloadInterval: 30 * 60 * 1000,
+    screenRefreshInterval: 30 * 1000,
+    animationSpeed: 2.5 * 1000,
+    grayscale: false,
+    showNextRace: true
   }
 },
 {
