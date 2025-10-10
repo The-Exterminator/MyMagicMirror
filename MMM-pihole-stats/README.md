@@ -4,8 +4,6 @@ A MagicMirror Module for displaying the Danish TV2 station News.
 
 [![Platform](https://img.shields.io/badge/platform-MagicMirror-informational)](https://MagicMirror.builders)
 
-# MMM-pihole-stats
-
 Pi-hole stats module for MagicMirror<sup>2</sup>
 
 ## Screenshots
