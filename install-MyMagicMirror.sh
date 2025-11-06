@@ -3,8 +3,9 @@
 echo -e "\033[33;1mDelete the old Node.js version:\033[0m"
 sudo apt purge nodejs
 
-echo -e "\033[33;1mDownload and install Node.js version 16:\033[0m"
-curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+echo -e "\033[33;1mDownload and install Node.js version 22:\033[0m"
+sudo apt-get install -y curl
+curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
 sudo apt install -y nodejs
 
 echo -e "\033[33;1mClone the repository and check out the master branch:\033[0m"
